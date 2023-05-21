@@ -126,3 +126,9 @@ We also have a dedicated area on our [forum](https://forum.atlasos.net/t/art-sho
 Atlas-OS is **NOT** a pre-activated version of Windows. You **must** use a valid key to activate Windows. Before buying a Windows 10 (Professional or Home) license, be sure the seller is trustworthy and the key is legitimate — no matter where you buy it.
 
 Atlas is based on Microsoft Windows. By using Windows, you agree to [Microsoft's Terms of Service](https://www.microsoft.com/en-us/Useterms/Retail/Windows/10/UseTerms_Retail_Windows_10_English.htm).
+
+## Bug
+Known Issue :
+- When you are trying to run this playbook at the end of installation it will give error, but system can boot after restart
+- Microsoft Store Crashing to fix it do `Get-AppxPackage -alluser *WindowsStore* | Remove-Appxpackage` and `Get-AppxPackage -AllUsers Microsoft.WindowsStore* | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}` 
+- Any more issue will be updated here
