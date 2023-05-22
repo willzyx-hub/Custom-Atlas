@@ -543,7 +543,7 @@ actions:
   - !registryValue:
     path: 'HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize'
     value: 'EnableTransparency'
-    data: '0'
+    data: '1'
     type: REG_DWORD
 
     # Configure visual effect settings
@@ -610,7 +610,7 @@ actions:
   - !registryValue:
     path: 'HKLM\SOFTWARE\Policies\Microsoft\Windows\DWM'
     value: 'DisallowAnimations'
-    data: '1'
+    data: '0'
     type: REG_DWORD
 
     # Change tooltip color to blue
@@ -816,7 +816,7 @@ actions:
   - !registryValue:
     path: 'HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer'
     value: 'AltTabSettings'
-    data: '1'
+    data: '0'
     type: REG_DWORD
 
     # Enable always show all icons and notifications on the taskbar
